@@ -1,0 +1,37 @@
+<!-- Output: html -->
+<!-- File: index.html -->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#2F6F6A">
+  <meta name="description" content="過ごした時間を、あとから思い出すための記録帳">
+  <title>ひととき帳</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="wrap">
+      <h1 class="title">ひととき帳</h1>
+      <p class="sub">過ごした時間を、あとから思い出すための記録帳</p>
+    </div>
+  </header>
+  <div id="banner" class="wrap"></div>
+  <div id="flash" class="wrap" role="status" aria-live="polite"></div>
+  <main id="main" class="wrap" tabindex="-1">
+    <noscript>
+      <p>ひととき帳を使うには、JavaScriptを有効にしてください。</p>
+    </noscript>
+  </main>
+  <div id="toast" class="toast" aria-hidden="true"></div>
+  <nav class="tabbar" aria-label="画面の切り替え">
+    <div class="tabbar-inner" id="tabbar"></div>
+  </nav>
+</body>
+</html>

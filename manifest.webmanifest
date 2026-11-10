@@ -1,0 +1,19 @@
+{
+  "name": "ひととき帳",
+  "short_name": "ひととき帳",
+  "description": "過ごした時間を、あとから思い出すための記録帳",
+  "lang": "ja",
+  "start_url": "./#/record",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAF8F4",
+  "theme_color": "#2F6F6A",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
